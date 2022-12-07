@@ -1,0 +1,1 @@
+INSERT INTO COMPRAS (id_cliente, id_produto) VALUES (8,10);
