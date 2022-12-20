@@ -2,7 +2,7 @@ CREATE DATABASE bank;
 
 CREATE TABLE "states"(
    	"id" serial PRIMARY KEY,
-	"name" TEXT NOT NULL,
+	"name" TEXT NOT NULL
 );
 
 CREATE TABLE "cities"(
@@ -36,7 +36,7 @@ CREATE TABLE "customerAddresses"(
     "number" INT NOT NULL,
     "complement" TEXT NOT NULL,
     "postalCode" TEXT NOT NULL,
-    FOREIGN KEY ("customerId") REFERENCES "customers"("id")
+    FOREIGN KEY ("customerId") REFERENCES "customers"("id"),
     FOREIGN KEY ("cityId") REFERENCES "cities"("id")
 );
 
